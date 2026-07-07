@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /terms/
+Disallow: /privacy/
+
+Sitemap: https://lazybearlife.com/sitemap.xml
