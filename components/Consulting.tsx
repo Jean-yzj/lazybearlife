@@ -69,14 +69,6 @@ export function Consulting() {
           })}
         </div>
 
-        {/* 接案入口 */}
-        <div className="mx-auto mt-6 max-w-3xl rounded-[var(--radius-card)] border border-dashed border-honey-soft bg-honey-soft/15 p-7">
-          <h3 className="text-lg font-semibold text-ink">{consulting.freelance.title}</h3>
-          <p className="mt-2 text-[15px] leading-relaxed text-ink-soft">
-            {consulting.freelance.body}
-          </p>
-        </div>
-
         {/* 流程四步 */}
         <div className="mx-auto mt-16 max-w-3xl">
           <h3 className="text-center text-sm font-medium text-muted">預約流程</h3>

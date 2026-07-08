@@ -5,7 +5,7 @@ export const legalConfig = {
   productName: "Lazy Bear Life",
   productUrl: "https://lazybearlife.com",
   serviceDesc:
-    "展示個人作品、提供一對一付費諮詢預約，以及接案合作洽詢的個人網站",
+    "展示個人作品與推薦、提供一對一付費諮詢預約的個人網站",
   contactEmail: "hello@lazybearlife.com", // TODO: 換成你對外的真實信箱（需與 lib/site.ts 一致）
   effectiveDate: "2026-07-08",
   version: "1.0",

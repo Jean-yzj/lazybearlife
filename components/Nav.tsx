@@ -28,7 +28,7 @@ export function Nav() {
           href="#consulting"
           className="rounded-full bg-honey px-4 py-2 text-sm font-medium text-cream shadow-sm transition-colors hover:bg-honey-deep"
         >
-          預約諮詢
+          {site.hero.primaryCta}
         </a>
       </nav>
     </header>
