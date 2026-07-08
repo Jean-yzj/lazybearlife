@@ -12,6 +12,12 @@ export const site = {
     domain: "lazybearlife.com",
   },
 
+  // 個人資料
+  profile: {
+    name: "Jean",
+    avatar: "", // TODO: 頭像圖檔，放 public/ 後填路徑（例 "/avatar.jpg"）；留空顯示佔位圖示
+  },
+
   // 對外連結（TODO 標記處上線前填入真實值）
   links: {
     // 預約：先用 Cal.com。帳號建立後把網址換成你的真實預約連結。
@@ -32,7 +38,7 @@ export const site = {
     eyebrow: "文組出身 · 靠 AI 自學 · 獨立開發者",
     title: "嗨，我是 Jean\n把想法做成真的產品",
     subtitle:
-      "文組背景，這兩年靠 AI 自學，做出上架 App Store 的 App、單日湧入五千人的網站。這裡放了我做過的東西、我在用的工具，還有——如果你想，也可以約我聊聊。",
+      "文組背景，這兩年靠 AI 自學，做出上架 App Store 的 App、單日湧入五千人的網站。這裡放了我做過的產品、正在寫的筆記，還有——如果你想，也可以約我聊聊。",
     stats: [
       { value: "5,568", label: "單日湧入的真人註冊" },
       { value: "4", label: "個真的上線的產品" },
@@ -138,17 +144,6 @@ export const site = {
         href: "podcast",
         cta: "收聽節目",
       },
-    ],
-  },
-
-  toolbox: {
-    eyebrow: "順手推薦",
-    title: "我在用的工具",
-    intro: "這些是我實際在用、也願意推薦給你的東西。部分連結為合作推廣連結，你透過它們購買不會多花錢，但我可能得到一點回饋。",
-    apps: [
-      { name: "Zeabur", desc: "我所有網站的部署平台，對獨立開發者很友善。" },
-      { name: "Claude", desc: "我最常用的 AI 助手，寫程式、想產品都靠它。" },
-      { name: "Cursor", desc: "把 AI 直接放進編輯器，出貨速度的關鍵。" },
     ],
   },
 

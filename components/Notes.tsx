@@ -31,7 +31,7 @@ export function Notes() {
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-8 inline-flex items-center gap-2 rounded-full bg-honey px-7 py-3.5 text-base font-medium text-cream shadow-md shadow-honey/20 transition-all hover:bg-honey-deep hover:shadow-lg"
+          className="btn-fill mt-8"
         >
           {notes.cta}
           <ArrowRight className="h-4 w-4" />

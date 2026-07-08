@@ -56,11 +56,7 @@ export function Consulting() {
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`mt-8 rounded-full px-6 py-3 text-center text-base font-medium transition-colors ${
-                    plan.featured
-                      ? "bg-honey text-cream shadow-md shadow-honey/20 hover:bg-honey-deep"
-                      : "border border-line text-ink hover:bg-cream-deep"
-                  }`}
+                  className={`mt-8 w-full ${plan.featured ? "btn-fill" : "btn-line"}`}
                 >
                   {plan.cta}
                 </a>

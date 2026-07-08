@@ -24,10 +24,7 @@ export function Nav() {
           </a>
         </div>
 
-        <a
-          href="#consulting"
-          className="rounded-full bg-honey px-4 py-2 text-sm font-medium text-cream shadow-sm transition-colors hover:bg-honey-deep"
-        >
+        <a href="#consulting" className="btn-line btn-sm">
           {site.hero.primaryCta}
         </a>
       </nav>

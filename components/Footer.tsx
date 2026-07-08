@@ -7,17 +7,14 @@ export function Footer() {
     <footer className="border-t border-line bg-cream">
       <div className="mx-auto max-w-5xl px-6 py-14">
         {/* 收尾 CTA */}
-        <div className="rounded-[var(--radius-card)] bg-ink px-8 py-12 text-center">
-          <h2 className="text-balance text-2xl font-bold tracking-tight text-cream sm:text-3xl">
+        <div className="rounded-[var(--radius-card)] border border-line bg-cream-deep px-8 py-14 text-center">
+          <h2 className="text-balance text-2xl font-bold tracking-tight text-ink sm:text-3xl">
             想認識我，或聊聊你在做的事？
           </h2>
-          <p className="mx-auto mt-3 max-w-md text-[15px] leading-relaxed text-cream/70">
+          <p className="mx-auto mt-3 max-w-md text-[15px] leading-relaxed text-ink-soft">
             不管是想開始一個產品，還是單純交流，我都很樂意聊聊。
           </p>
-          <a
-            href="#consulting"
-            className="mt-7 inline-block rounded-full bg-honey px-7 py-3.5 text-base font-medium text-cream shadow-md transition-colors hover:bg-honey-deep"
-          >
+          <a href="#consulting" className="btn-fill mt-8">
             {site.hero.primaryCta}
           </a>
         </div>

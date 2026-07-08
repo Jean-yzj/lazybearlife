@@ -1,12 +1,28 @@
 import { site } from "@/lib/site";
+import { BearMark } from "./BearMark";
 
 export function Hero() {
-  const { hero, links } = site;
+  const { hero, profile } = site;
   return (
     <section id="top" className="glow-honey relative overflow-hidden">
-      <div className="mx-auto max-w-5xl px-6 pb-20 pt-20 sm:pb-28 sm:pt-28">
+      <div className="mx-auto max-w-5xl px-6 pb-20 pt-16 sm:pb-28 sm:pt-24">
         <div className="fade-up mx-auto max-w-3xl text-center">
-          <p className="mb-6 inline-flex items-center rounded-full border border-honey-soft bg-cream/60 px-4 py-1.5 text-[13px] font-medium text-honey-deep">
+          <div className="mb-7 flex justify-center">
+            <div className="flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border-2 border-honey bg-cream-deep">
+              {profile.avatar ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={profile.avatar}
+                  alt={profile.name}
+                  className="h-full w-full object-cover"
+                />
+              ) : (
+                <BearMark className="h-11 w-11 text-honey" />
+              )}
+            </div>
+          </div>
+
+          <p className="mb-6 inline-flex items-center rounded-full border border-honey-soft bg-cream px-4 py-1.5 text-[13px] font-medium text-honey-deep">
             {hero.eyebrow}
           </p>
 
@@ -22,17 +38,11 @@ export function Hero() {
             {hero.subtitle}
           </p>
 
-          <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a
-              href="#consulting"
-              className="w-full rounded-full bg-honey px-7 py-3.5 text-base font-medium text-cream shadow-md shadow-honey/20 transition-all hover:bg-honey-deep hover:shadow-lg sm:w-auto"
-            >
+          <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a href="#consulting" className="btn-fill w-full sm:w-auto">
               {hero.primaryCta}
             </a>
-            <a
-              href="#about"
-              className="w-full rounded-full border border-line bg-cream/50 px-7 py-3.5 text-base font-medium text-ink transition-colors hover:bg-cream-deep sm:w-auto"
-            >
+            <a href="#work" className="btn-line w-full sm:w-auto">
               {hero.secondaryCta}
             </a>
           </div>

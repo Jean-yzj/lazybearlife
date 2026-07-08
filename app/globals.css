@@ -2,28 +2,29 @@
 
 /* ============================================================
    Lazy Bear Life — 設計 token
-   暖色中性底 + 單一蜂蜜金 accent，克制、聚焦。
+   白色主調 + 咖啡色線條 accent，乾淨、克制、精緻。
+   （token 名沿用 cream/honey，值已改為白底＋咖啡）
    ============================================================ */
 @theme {
-  --color-cream: #fbf9f6;
-  --color-cream-deep: #f4efe8;
-  --color-ink: #2a2521;
-  --color-ink-soft: #4a433c;
-  --color-muted: #857a6e;
-  --color-line: #ebe4d9;
-  --color-honey: #c17d2b;
-  --color-honey-deep: #a8681d;
-  --color-honey-soft: #f0d9b8;
+  --color-cream: #ffffff;
+  --color-cream-deep: #f7f4f0;
+  --color-ink: #231c16;
+  --color-ink-soft: #4c443c;
+  --color-muted: #8b7f72;
+  --color-line: #ece7df;
+  --color-honey: #6f4a2f;
+  --color-honey-deep: #523625;
+  --color-honey-soft: #eadfd4;
 
-  --color-violet: #7c6bb0;
-  --color-amber: #c99a3f;
-  --color-rose: #c16b78;
-  --color-sky: #5f92b8;
+  --color-violet: #6f5f9e;
+  --color-amber: #b07f2e;
+  --color-rose: #b05f6b;
+  --color-sky: #4f7fa3;
 
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
 
-  --radius-card: 1.25rem;
+  --radius-card: 1.1rem;
 }
 
 html {
@@ -39,11 +40,68 @@ body {
   letter-spacing: -0.011em;
 }
 
-/* hero 暖色光暈：本站唯一 signature 視覺 */
+/* hero 極淡咖啡微光（白主調下的克制點綴） */
 .glow-honey {
   background:
-    radial-gradient(60% 55% at 50% 0%, rgba(193, 125, 43, 0.16) 0%, rgba(193, 125, 43, 0) 70%),
-    radial-gradient(40% 40% at 82% 18%, rgba(240, 217, 184, 0.35) 0%, rgba(240, 217, 184, 0) 65%);
+    radial-gradient(55% 45% at 50% 0%, rgba(111, 74, 47, 0.05) 0%, rgba(111, 74, 47, 0) 70%);
+}
+
+/* ============================================================
+   按鈕：咖啡色線條方框 + 點擊下沉（實體按鍵手感）
+   .btn-fill 填色主行動 / .btn-line 線框次行動 / .btn-sm 小尺寸
+   ============================================================ */
+.btn-fill,
+.btn-line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.8rem;
+  padding: 0.85rem 1.7rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1;
+  border: 2px solid var(--color-honey);
+  cursor: pointer;
+  transition: transform 0.09s ease, box-shadow 0.09s ease,
+    background-color 0.15s ease, color 0.15s ease;
+}
+.btn-fill {
+  background: var(--color-honey);
+  color: #fff;
+  box-shadow: 0 3px 0 0 var(--color-honey-deep);
+}
+.btn-fill:hover {
+  background: var(--color-honey-deep);
+  border-color: var(--color-honey-deep);
+}
+.btn-fill:active {
+  transform: translateY(3px);
+  box-shadow: 0 0 0 0 var(--color-honey-deep);
+}
+.btn-line {
+  background: transparent;
+  color: var(--color-honey);
+  box-shadow: 0 3px 0 0 var(--color-honey);
+}
+.btn-line:hover {
+  background: var(--color-honey-soft);
+}
+.btn-line:active {
+  transform: translateY(3px);
+  box-shadow: 0 0 0 0 var(--color-honey);
+}
+.btn-sm {
+  padding: 0.5rem 1.05rem;
+  font-size: 0.875rem;
+  border-radius: 0.65rem;
+  box-shadow: 0 2px 0 0 var(--color-honey);
+}
+.btn-sm.btn-fill {
+  box-shadow: 0 2px 0 0 var(--color-honey-deep);
+}
+.btn-sm:active {
+  box-shadow: 0 0 0 0 var(--color-honey);
 }
 
 .fade-up {
