@@ -55,5 +55,6 @@ export const EDITABLE_SECTIONS: { key: keyof Site; label: string; hint: string }
   { key: "brands", label: "品牌", hint: "實習通、Podcast 等" },
   { key: "about", label: "關於我", hint: "自我介紹與推薦語" },
   { key: "notes", label: "筆記預告", hint: "即將推出區塊的文案" },
+  { key: "recommends", label: "懶惰熊推薦", hint: "省錢理財推薦清單（可增刪）" },
   { key: "links", label: "連結", hint: "預約、作品、社群、Email 等所有對外連結" },
 ];

@@ -15,7 +15,7 @@ export const site = {
   // 個人資料
   profile: {
     name: "Jean",
-    avatar: "", // TODO: 頭像圖檔，放 public/ 後填路徑（例 "/avatar.jpg"）；留空顯示佔位圖示
+    avatar: "/avatar.jpg", // 懶惰熊頭像（來自 Linktree，檔案在 public/avatar.jpg）；後台可換
   },
 
   // 對外連結（TODO 標記處上線前填入真實值）
@@ -29,7 +29,8 @@ export const site = {
     perfume: "https://perfume-recommender.zeabur.app",
     knowme: "", // TODO: KnowMe App Store 連結
     stardivination: "", // TODO: 星之占卜 App Store 連結
-    shopee: "", // TODO: 蝦皮選物連結（留空則工具箱不顯示蝦皮卡）
+    shopee: "https://shpe.site/lazybear", // 蝦皮優惠/書籍推薦清單
+    linktree: "https://linktr.ee/iamlazybear", // 完整推薦清單
     contactEmail: "hello@lazybearlife.com", // TODO: 換成你要對外的客服信箱
     notesWaitlist: "", // TODO: 筆記搶先通知表單連結（Tally/Google 表單）。留空則按鈕自動 fallback 成寄信給 contactEmail
   },
@@ -156,6 +157,47 @@ export const site = {
     ],
     // 推薦語：收集到再填入，留空則整個區塊隱藏（不放假文）
     testimonials: [] as { quote: string; name: string; title: string }[],
+  },
+
+  // 懶惰熊推薦（精選；完整清單連到 Linktree）
+  recommends: {
+    eyebrow: "懶惰熊推薦",
+    title: "省錢、理財、學習的好東西",
+    intro:
+      "我平常真的在用、也常被問的東西，挑幾個放在這。部分為推薦連結，你透過它們註冊或購買不會多花錢，但我可能得到一點回饋。",
+    items: [
+      {
+        name: "蝦皮優惠與書籍推薦清單",
+        desc: "我整理的蝦皮好物與書單，持續更新。",
+        url: "https://shpe.site/lazybear",
+      },
+      {
+        name: "LINE 社群：理財、省錢、學習資訊",
+        desc: "我經營的社群，每天分享省錢與自我成長的資訊。",
+        url: "https://line.me/ti/g2/dlehRTu4ymXqQYcBN9k1MwceQ7g3TeCK23x2Aw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
+      },
+      {
+        name: "LINE 社群：台灣大學生實習交流群",
+        desc: "找實習、聊職涯的大學生聚集地。",
+        url: "https://line.me/ti/g2/jYgS-7nytcXt_T_ejgNiN98p6dqrmowfdKxRoA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
+      },
+      {
+        name: "Aifian：掃發票換現金",
+        desc: "我最推薦的發票 App，回饋可以直接換現金。",
+        url: "https://aifian.page.link/i15m",
+      },
+      {
+        name: "ShopBack：網購賺現金回饋",
+        desc: "網購前先過一手，回饋累積起來很可觀。",
+        url: "https://app.shopback.com/VdpAvI4GDwb",
+      },
+      {
+        name: "KLOOK：活動與旅遊必備",
+        desc: "訂票、行程、體驗，出去玩之前先看這裡。",
+        url: "https://s.klook.com/c/kvxm9w",
+      },
+    ],
+    moreCta: "看完整推薦清單",
   },
 
   // 筆記（數位產品，即將推出＋留 email 假門測試）

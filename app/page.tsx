@@ -5,6 +5,7 @@ import { Consulting } from "@/components/Consulting";
 import { Brands } from "@/components/Brands";
 import { About } from "@/components/About";
 import { Notes } from "@/components/Notes";
+import { Recommends } from "@/components/Recommends";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <Brands />
         <About />
         <Notes />
+        <Recommends />
       </main>
       <Footer />
     </>
