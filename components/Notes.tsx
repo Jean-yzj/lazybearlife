@@ -1,8 +1,8 @@
-import { site } from "@/lib/site";
+import { getSite } from "@/lib/content";
 import { ArrowRight, BookOpen } from "lucide-react";
 
-export function Notes() {
-  const { notes, links } = site;
+export async function Notes() {
+  const { notes, links } = await getSite();
   const url =
     links.notesWaitlist ||
     `mailto:${links.contactEmail}?subject=${encodeURIComponent("筆記搶先通知")}`;

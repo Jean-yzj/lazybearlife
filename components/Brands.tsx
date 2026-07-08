@@ -1,8 +1,8 @@
-import { site } from "@/lib/site";
+import { getSite } from "@/lib/content";
 import { ArrowUpRight } from "lucide-react";
 
-export function Brands() {
-  const { brands, links } = site;
+export async function Brands() {
+  const { brands, links } = await getSite();
   return (
     <section className="mx-auto max-w-5xl px-6 py-20 sm:py-24">
       <p className="text-sm font-medium text-honey-deep">{brands.eyebrow}</p>

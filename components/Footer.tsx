@@ -1,7 +1,8 @@
-import { site } from "@/lib/site";
+import { getSite } from "@/lib/content";
 import { BearMark } from "./BearMark";
 
-export function Footer() {
+export async function Footer() {
+  const site = await getSite();
   const { brand, links } = site;
   return (
     <footer className="border-t border-line bg-cream">
@@ -30,10 +31,10 @@ export function Footer() {
           </div>
 
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
-            <a href="/terms/" className="text-ink-soft transition-colors hover:text-honey">
+            <a href="/terms" className="text-ink-soft transition-colors hover:text-honey">
               服務條款
             </a>
-            <a href="/privacy/" className="text-ink-soft transition-colors hover:text-honey">
+            <a href="/privacy" className="text-ink-soft transition-colors hover:text-honey">
               隱私權政策
             </a>
             <a

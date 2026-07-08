@@ -1,8 +1,8 @@
-import { site } from "@/lib/site";
+import { getSite } from "@/lib/content";
 import { Check } from "lucide-react";
 
-export function Consulting() {
-  const { consulting, links } = site;
+export async function Consulting() {
+  const { consulting, links } = await getSite();
   return (
     <section id="consulting" className="border-y border-line bg-cream-deep/40">
       <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">

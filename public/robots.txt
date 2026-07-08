@@ -2,5 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /terms/
 Disallow: /privacy/
+Disallow: /admin/
+Disallow: /api/
 
 Sitemap: https://lazybearlife.com/sitemap.xml

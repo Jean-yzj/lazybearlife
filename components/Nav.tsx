@@ -1,7 +1,8 @@
-import { site } from "@/lib/site";
+import { getSite } from "@/lib/content";
 import { BearMark } from "./BearMark";
 
-export function Nav() {
+export async function Nav() {
+  const site = await getSite();
   return (
     <header className="sticky top-0 z-50 border-b border-line/70 bg-cream/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">

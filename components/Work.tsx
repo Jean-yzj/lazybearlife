@@ -1,4 +1,4 @@
-import { site } from "@/lib/site";
+import { getSite } from "@/lib/content";
 import { ArrowUpRight } from "lucide-react";
 
 const dotColor: Record<string, string> = {
@@ -8,8 +8,8 @@ const dotColor: Record<string, string> = {
   sky: "bg-sky",
 };
 
-export function Work() {
-  const { work, links } = site;
+export async function Work() {
+  const { work, links } = await getSite();
   return (
     <section id="work" className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
       <div className="max-w-2xl">

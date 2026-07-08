@@ -23,6 +23,9 @@ yarn-error.log*
 .env*
 !.env.example
 
+# 本地檔案模式的內容與上傳（後台資料，不進版控）
+/data
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

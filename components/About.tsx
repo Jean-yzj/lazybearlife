@@ -1,7 +1,7 @@
-import { site } from "@/lib/site";
+import { getSite } from "@/lib/content";
 
-export function About() {
-  const { about } = site;
+export async function About() {
+  const { about } = await getSite();
   const hasTestimonials = about.testimonials.length > 0;
   return (
     <section id="about" className="mx-auto max-w-5xl px-6 py-20 sm:py-28">

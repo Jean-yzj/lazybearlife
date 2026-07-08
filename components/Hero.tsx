@@ -1,8 +1,8 @@
-import { site } from "@/lib/site";
+import { getSite } from "@/lib/content";
 import { BearMark } from "./BearMark";
 
-export function Hero() {
-  const { hero, profile } = site;
+export async function Hero() {
+  const { hero, profile } = await getSite();
   return (
     <section id="top" className="glow-honey relative overflow-hidden">
       <div className="mx-auto max-w-5xl px-6 pb-20 pt-16 sm:pb-28 sm:pt-24">
