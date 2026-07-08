@@ -25,6 +25,7 @@ export const site = {
     stardivination: "", // TODO: 星之占卜 App Store 連結
     shopee: "", // TODO: 蝦皮選物連結（留空則工具箱不顯示蝦皮卡）
     contactEmail: "hello@lazybearlife.com", // TODO: 換成你要對外的客服信箱
+    notesWaitlist: "", // TODO: 筆記搶先通知表單連結（Tally/Google 表單）。留空則按鈕自動 fallback 成寄信給 contactEmail
   },
 
   hero: {
@@ -160,6 +161,15 @@ export const site = {
     ],
     // 推薦語：收集到再填入，留空則整個區塊隱藏（不放假文）
     testimonials: [] as { quote: string; name: string; title: string }[],
+  },
+
+  // 筆記（數位產品，即將推出＋留 email 假門測試）
+  notes: {
+    eyebrow: "即將推出",
+    title: "文組生自學做網站，\n我寫成了一份筆記",
+    body: "從什麼都不會，到做出四個上線的產品——中間走過的路、踩過的坑、每個決定背後的想法，我正在整理成一份給文組生的實戰筆記。不是教科書，是我真的怎麼一步一步做出來的。",
+    cta: "完成時通知我",
+    note: "留個 email，筆記完成時第一個通知你，也會有搶先價。",
   },
 };
 
