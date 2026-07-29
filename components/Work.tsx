@@ -15,10 +15,10 @@ export async function Work() {
       <div className="max-w-2xl">
         <p className="text-sm font-medium text-honey-deep">作品</p>
         <h2 className="mt-2 text-balance text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-          四個產品，一條把想法做出來的軌跡
+          五個產品，一條把想法做出來的軌跡
         </h2>
         <p className="mt-4 text-lg leading-relaxed text-ink-soft">
-          從第一次戰戰兢兢送審，到一天湧入五千人，再到讓產品自己賺錢。這不是履歷上的一行字，是四個你現在就點得進去的東西。
+          從第一次戰戰兢兢送審，到一天湧入五千人，再到讓產品自己賺錢。這不是履歷上的一行字，是五個你現在就點得進去的東西。
         </p>
       </div>
 
@@ -27,10 +27,15 @@ export async function Work() {
           const url = links[w.href as keyof typeof links];
           const hasLink = typeof url === "string" && url.length > 0;
           const Tag = hasLink ? "a" : "div";
+          const isInternal = hasLink && (url as string).startsWith("/");
           return (
             <Tag
               key={w.name}
-              {...(hasLink ? { href: url, target: "_blank", rel: "noopener noreferrer" } : {})}
+              {...(hasLink
+                ? isInternal
+                  ? { href: url }
+                  : { href: url, target: "_blank", rel: "noopener noreferrer" }
+                : {})}
               className={`group flex flex-col rounded-[var(--radius-card)] border border-line bg-cream p-8 transition-all ${
                 hasLink ? "hover:-translate-y-1 hover:border-honey-soft hover:shadow-lg hover:shadow-honey/5" : ""
               }`}

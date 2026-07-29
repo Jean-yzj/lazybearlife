@@ -32,6 +32,7 @@ export const site = {
     shopee: "https://shpe.site/lazybear", // 蝦皮優惠/書籍推薦清單
     linktree: "https://linktr.ee/iamlazybear", // 完整推薦清單
     contactEmail: "hello@lazybearlife.com", // TODO: 換成你要對外的客服信箱
+    threadsBook: "/threads", // Threads 電子書銷售頁（站內）
     notesWaitlist: "", // TODO: 筆記搶先通知表單連結（Tally/Google 表單）。留空則按鈕自動 fallback 成寄信給 contactEmail
   },
 
@@ -86,6 +87,15 @@ export const site = {
       metrics: ["App Store 上架", "訂閱制變現"],
       href: "knowme",
       accent: "sky",
+    },
+    {
+      name: "懶人也能經營 Threads",
+      chapter: "把兩年的經驗變成產品",
+      pain: "想經營自媒體，但不想露臉、沒時間拍片，也不知道從哪裡開始。",
+      approach: "把自己從 0 寫到兩萬多追蹤的過程整理成一本筆記，六個章節六萬字，每個範例都是我真的發過的文。",
+      metrics: ["電子書", "六萬字", "17 則真實貼文"],
+      href: "threadsBook",
+      accent: "amber",
     },
   ],
 
